@@ -2,7 +2,7 @@ import sys
 
 from PyQt6.QtGui import QGuiApplication
 from PyQt6.QtQml import QQmlApplicationEngine
-import PyQt6.QtMultimedia
+
 
 app = QGuiApplication(sys.argv)
 

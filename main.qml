@@ -4,20 +4,27 @@ import QtMultimedia 5.0
 
 ApplicationWindow {
     visible: true
-    width: 1080
-    height: 1080
+    width: 660/2
+    height: 845/2
     title: "Neptun"
     
-    
-
-    Video {
-    id: video
-    visible:true
-    width: 1080
-    height: 1080
-    autoPlay: true
-    source: "neptun.mov" 
+    Image {
+        id:background
+        width: 660/2
+        height: 845/2
+        source: "media/background.png"
     }
 
+    Image {
+        id: star
+        x: (parent.width - width) / 2
+        width: 300
+        height: 260
+        source: "media/star.png"
+    }
     
+    Video {
+        id: neptun
+        source: "media/neptun.mov"
+    }
 }
